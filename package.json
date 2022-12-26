@@ -1,7 +1,7 @@
 {
   "name": "create-dotfiles",
   "description": "Create or manage dotfiles",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "marcomafessolli <marcomafessolli@gmail.com>",
   "bin": "dist/cli.js",
   "files": [
