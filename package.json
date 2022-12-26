@@ -1,0 +1,26 @@
+{
+  "name": "create-dotfiles",
+  "description": "Create or manage dotfiles",
+  "version": "0.0.0",
+  "author": "marcomafessolli <marcomafessolli@gmail.com>",
+  "bin": "dist/cli.js",
+  "files": [
+    "dist",
+    "templates"
+  ],
+  "scripts": {
+    "build": "tsup src/cli.ts --minify",
+    "clean": "shx rm -rf lib",
+    "dev": "tsup src/cli.ts --watch",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "dependencies": {
+    "create-create-app": "^7.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.17",
+    "tsup": "^6.5.0",
+    "typescript": "^4.9.4"
+  },
+  "license": "MIT"
+}
